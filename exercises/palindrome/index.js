@@ -19,4 +19,12 @@ function palindrome(str) {
   return str.split('').reverse().join('') === str
 }
 
+function palindrome(str) {
+  const arr = str.split('')
+
+  return arr.every((char, i) => {
+    return char === str[str.length - i - 1]
+  });
+}
+
 module.exports = palindrome;
