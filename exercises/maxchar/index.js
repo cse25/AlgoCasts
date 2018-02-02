@@ -27,4 +27,21 @@ function maxChar(str) {
   return largestChar
 }
 
+// function maxChar(str) {
+//   const obj = {}
+//   for (let char of str) {
+//     obj[char] = obj[char] + 1 || 1
+//   }
+//
+//   let largestNum = 0
+//   let largestChar;
+//   for (let key in obj) {
+//     if (obj[key] > largestNum) {
+//       largestNum = obj[key]
+//       largestChar = key
+//     }
+//   }
+//   return largestChar
+// }
+
 module.exports = maxChar;
