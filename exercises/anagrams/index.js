@@ -38,5 +38,18 @@ function buildCharMap(string) {
 
 anagrams('Rail! Safety!', 'Fairy Tales')
 
+function anagrams(stringA, stringB) {
+  const a = cleanString(stringA)
+  const b = cleanString(stringB)
+  console.log(a,b)
+
+  return (a === b)
+}
+
+function cleanString(string) {
+  return string.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
+}
+
+anagrams('Rail! Safety!', 'Fairy Tales')
 
 module.exports = anagrams;
