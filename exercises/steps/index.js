@@ -37,4 +37,20 @@ function steps(n, row = 0, stair = '') {
   steps(n, row, stair)
 }
 
+// function steps(n) {
+//   for (let row = 0; row < n; row++) {
+//     let stair = ''
+//     for (let column = 0; column < n; column++) {
+//       if (column <= row) {
+//         stair += '#'
+//       } else {
+//         stair += ' '
+//       }
+//     }
+//     console.log(stair)
+//   }
+// }
+//
+// steps(4)
+//
 module.exports = steps;
