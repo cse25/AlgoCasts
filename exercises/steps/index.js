@@ -53,4 +53,21 @@ function steps(n, row = 0, stair = '') {
 //
 // steps(4)
 //
+// function steps(n) {
+//   let spaces = ''
+//   for (let i = 1; i < n; i++) {
+//     spaces += ' '
+//   }
+//
+//   let word = '#' + spaces
+//
+//   for (let j = 0; j < n; j++) {
+//     console.log(word)
+//     word = '#' + word
+//     word = word.substring(0, n)
+//   }
+// }
+//
+// steps(4)
+
 module.exports = steps;
