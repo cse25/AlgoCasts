@@ -14,6 +14,21 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+function pyramid(n) {
+  for (let row = 0; row < n; row++) {
+    let line = ''
+    for (let col = 0; col < n; col++) {
+      if (col <= row) {
+        line += '#'
+      } else {
+        line += ' '
+      }
+    }
+    let prepend = line.slice(1).split('').reverse().join('')
+    console.log(prepend + line)
+  }
+}
+
+pyramid(3)
 
 module.exports = pyramid;
