@@ -22,4 +22,16 @@ function vowels(string) {
   return count
 }
 
+function vowels(string) {
+  let count = 0
+  const vowelArray = ['a', 'e', 'i', 'o', 'u']
+
+  for (let char of string.toLowerCase()) {
+    if (vowelArray.includes(char)) {
+      count++
+    }
+  }
+
+  return count
+}
 module.exports = vowels;
